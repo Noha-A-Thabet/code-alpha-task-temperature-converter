@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/tempConverter.css" />
+  </head>
+
+  <body>
+    <div class="parent">
+      <!--start temp-info-section-->
+      <section class="temp-info-section">
+        <h2>enter temperature</h2>
+        <div class="form-options">
+          <!-- first form -->
+          <div class="first-form">
+            <label for="degree">Degree :</label>
+            <input
+              type="number"
+              id="insert-degree"
+              name="degree"
+              oninput="insertTemp()"
+              value=""
+            />
+            <select name="temp-units" id="temp-units">
+              <option value="degree-c" selected>&deg;C</option>
+              <option value="degree-k">&deg;K</option>
+              <option value="degree-f">&deg;F</option>
+            </select>
+          </div>
+
+          <!-- second form -->
+          <div class="second-form">
+            <form onsubmit="showTempDegree(event)">
+              <label for="convert-in" id="convert-in">convert in : </label>
+              <select name="convert-in" id="convert-units">
+                <option value="Celsius" selected>Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+              </select>
+              <button type="submit" id="submit-temp">
+                Convert <span>&#8594;</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- end temp-info-section -->
+
+      <!-- start temp-info-result -->
+      <section class="temp-info-result">
+        <div class="show-result">
+          <h2 class="result" id="result">result</h2>
+        </div>
+      </section>
+    </div>
+    <!-- end temp-info-result> -->
+    <script src="js/tempConverter.js"></script>
+  </body>
+</html>

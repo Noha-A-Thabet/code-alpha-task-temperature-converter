@@ -1,0 +1,203 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+/* start parent */
+.parent {
+     display: flex;
+}
+
+/* end parent */
+
+/* start temp-info-section */
+.temp-info-section {
+     border: 3px solid #2daad8;
+     height: 100vh;
+     width: 50vw;
+     padding: 20px;
+
+
+}
+
+.temp-info-section h2 {
+     text-transform: capitalize;
+     color: #2daad8;
+     padding: 20px;
+}
+
+.temp-info-section h2:hover {
+     cursor: pointer;
+     text-decoration: underline;
+}
+
+.form-options {
+     height: 100vh;
+}
+
+.first-form {
+     padding: 10px 20px;
+
+}
+
+.first-form label {
+     margin-bottom: 10px;
+     display: block;
+     font-size: 20px;
+     font-weight: bold;
+     color: #2daad8;
+}
+
+.first-form #insert-degree {
+     height: 27px;
+     width: 300px;
+     border: 1px solid gray;
+     outline: 1px solid gray;
+}
+
+.first-form #insert-degree:focus {
+     border: 1px solid #2daad8;
+     outline: 1px solid #2daad8;
+}
+
+.first-form #degree {
+     margin-top: 10px;
+     height: 30px;
+     border: 1px solid gray;
+     outline: 1px solid gray;
+}
+
+.first-form #degree:focus {
+     border: 1px solid #2daad8;
+     outline: 1px solid #2daad8;
+}
+
+.first-form #temp-units {
+     height: 27px;
+     color: #2daad8 !important;
+     border: 1px solid gray;
+     outline: 1px solid gray;
+}
+
+
+/* second form */
+.second-form {
+     height: 100vh;
+     padding: 10px 20px;
+
+}
+
+.second-form label {
+     display: block;
+     font-size: 20px;
+     font-weight: bold;
+     color: #2daad8;
+     text-transform: capitalize;
+}
+
+.second-form #convert-units {
+     margin: 5px 20px 20px 0;
+     height: 25px;
+     width: 300px;
+     border: 1px solid gray;
+     outline: 1px solid gray;
+     color: #2daad8;
+}
+
+.second-form #convert-units:focus {
+     border: 1px solid #2daad8;
+     outline: 1px solid #2daad8;
+}
+
+.form-options #submit-temp {
+     display: block;
+}
+
+.temp-info-section #degree {
+     color: #2daad8;
+}
+
+#temp-units:focus {
+     border: 1px solid #2daad8;
+     outline: 1px solid #2daad8;
+}
+
+.temp-info-section #convert-in {
+     color: #2daad8;
+}
+
+
+#convert-units:focus {
+     border: 1px solid #2daad8;
+     outline: 1px solid #2daad8;
+}
+
+.temp-info-section #submit-temp {
+     background-color: #2daad8;
+     width: 150px;
+     height: 30px;
+     color: white;
+     border: 1px solid #2daad8;
+     font-weight: bold;
+     font-size: 15px;
+     text-align: center;
+}
+
+.temp-info-section #submit-temp:hover {
+     cursor: pointer;
+}
+
+.temp-info-section #submit-temp span {
+     font-weight: bold;
+     font-size: 18px;
+
+}
+
+/* end temp-info-section */
+
+/* start temp-info-result */
+
+
+.temp-info-result {
+     height: 100vh;
+     width: 50vw;
+     background-color: #2daad8;
+     font-size: 20px;
+}
+
+.temp-info-result .show-result {
+     height: 60vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.temp-info-result h2 {
+     color: white
+}
+
+/* end temp-info-result */
+@media only screen and (max-width: 600px) {
+     .parent {
+          display: block
+     }
+
+     .temp-info-section {
+          border: 3px solid #2daad8;
+          height: 50vh;
+          width: 100%;
+          display: block;
+          order: 2;
+     }
+
+     .temp-info-section #submit-temp {
+          margin: 30px auto;
+     }
+
+     .temp-info-result {
+          width: 100%
+     }
+
+}
